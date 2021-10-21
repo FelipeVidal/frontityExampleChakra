@@ -1,45 +1,16 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "404b84973ab75519c1e1",
+  "hash": "2a3848c3381b4fdabefc",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\felip\\Desktop\\Frontity with Chackra\\app\\build\\static",
   "assetsByChunkName": {
-    "app": [
-      "app.module.js",
-      "app.4481900accd2846df951.hot-update.js"
-    ]
+    "app": "app.module.js"
   },
   "assets": [
     {
-      "name": "4481900accd2846df951.hot-update.json",
-      "size": 45,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "app.4481900accd2846df951.hot-update.js",
-      "size": 4222,
-      "chunks": [
-        "app"
-      ],
-      "chunkNames": [
-        "app"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "app.module.js",
-      "size": 13376401,
+      "size": 13394293,
       "chunks": [
         "app"
       ],
@@ -57,8 +28,7 @@
         "app"
       ],
       "assets": [
-        "app.module.js",
-        "app.4481900accd2846df951.hot-update.js"
+        "app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -69,8 +39,7 @@
     {
       "id": "app",
       "files": [
-        "app.module.js",
-        "app.4481900accd2846df951.hot-update.js"
+        "app.module.js"
       ]
     }
   ]

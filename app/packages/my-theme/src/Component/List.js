@@ -1,4 +1,4 @@
-import React from "react"
+
 import { connect } from "frontity"
 import Link from "./Link"
 import { ListItem, UnorderedList } from "@chakra-ui/react"
