@@ -39,7 +39,7 @@ const ImageSwiper = ({state}) => {
     return(
         <>
             <Swiper
-            
+            loop = {true}
             grabCursor={true}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}

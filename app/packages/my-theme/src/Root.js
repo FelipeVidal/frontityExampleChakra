@@ -10,16 +10,18 @@ import Footer from './Component/Footer';
 import Home from './Component/Home';
 
 import stylesSwiperBundle from 'swiper/swiper-bundle.min.css'
+import stylesSwiper from 'swiper/swiper.min.css'
 import styles from './styles.css'
+
 import ImageSwiper from './Component/ImageSwiper';
 const Root = ({ state}) => {
     const data = state.source.get(state.router.link);
-
-    return (
+   return (
         <ChakraProvider theme={theme}  >
             <Global styles = {css(stylesSwiperBundle)}/>
+            <Global styles={css(stylesSwiper)} />
             <Global styles={css(styles)} />
-
+            
             <Header></Header>
             <Switch>
                 <Home when={data.isHome}>
