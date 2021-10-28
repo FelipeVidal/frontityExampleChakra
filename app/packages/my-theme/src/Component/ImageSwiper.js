@@ -5,6 +5,7 @@ import { Container } from "@chakra-ui/layout"
 import '../styles.css'
 import {Image,Text,Center,Box} from "@chakra-ui/react"
 import Link from './Link';
+import { useMediaQuery } from "@chakra-ui/react"
 const ImageSwiper = ({state}) => {
 
     const swipers = [];
