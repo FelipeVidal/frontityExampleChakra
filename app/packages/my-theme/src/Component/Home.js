@@ -11,9 +11,7 @@ const Home = ({ state,children }) => {
     return(
         <>
             <Container>
-                <Center>
-                    <Text margin = {"10px"} textStyle="tittlePage" > {isSmallerThan992 ? "Conoce nuestra mascotas":"Mascotas"} </Text>    
-                </Center>    
+                <Text margin = {"10px"} textStyle="tittlePage" > {isSmallerThan992 ? "Conoce nuestra mascotas":"Mascotas"} </Text>   
                 {children}           
             </Container>
         </>

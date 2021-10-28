@@ -1,18 +1,14 @@
 import {connect} from 'frontity';
-import {Swiper, SwiperSlide,span} from 'swiper/react'
-import 'swiper/swiper.min.css'
-import { Container } from "@chakra-ui/layout"
-import '../styles.css'
-import {Image,Text,Center,Box} from "@chakra-ui/react"
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Image} from "@chakra-ui/react"
 import Link from './Link';
-import { useMediaQuery } from "@chakra-ui/react"
 const ImageSwiper = ({state}) => {
 
-    const swipers = [];
-    const images = [];
     const data = state.source.get("/pets/")
+
+    const swipers = [];
     const dataPet = []
-    const swiperName = [];
+
     data.items.map((item) =>{
         const postData =  state.source.get(item.link)
      
@@ -22,7 +18,7 @@ const ImageSwiper = ({state}) => {
             name: state.source[postData.type][postData.id].acf.name
         });
     })
-    console.log(dataPet);
+
     dataPet.map((data,index)=>{
         swipers.push(
             
@@ -49,7 +45,6 @@ const ImageSwiper = ({state}) => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)} className="mySwiper">
                 {swipers}
-                
             </Swiper>
           
         </>

@@ -49,7 +49,6 @@ const themes = ({
             margin: "2%",
             fontFamily: "Body",
             marginLeft: "0%",
-            whiteSpace: "pre-line"
         },
 
 

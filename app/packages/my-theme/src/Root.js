@@ -9,7 +9,6 @@ import Page from './Component/Page';
 import Footer from './Component/Footer';
 import Home from './Component/Home';
 
-
 import stylesSwiperBundle from 'swiper/swiper-bundle.min.css'
 import styles from './styles.css'
 import ImageSwiper from './Component/ImageSwiper';
