@@ -1,17 +1,28 @@
-import { extendTheme } from "@chakra-ui/react" 
+import { extendTheme } from "@chakra-ui/react"
 import { createBreakpoints } from "@chakra-ui/theme-tools"
-
 const themes = ({
+    styles: {
+        global: {
+            "html, body": {
+                color: "gray.600",
+                lineHeight: "tall",
+            },
+            a: {
+                color: "teal.800",
+            },
+            
+        },
+    },
     textStyles: {
         tittlePage: {
             // you can also use responsive styles
             fontSize: "lg",
             fontWeight: "bold",
             margin: "5%",
-            marginLeft : "0%",
+            marginLeft: "0%",
             fontFamily: "Heading",
-  
-            
+
+
         },
         razaPet: {
             fontSize: "sm",
@@ -19,8 +30,8 @@ const themes = ({
             fontWeight: "normal",
             fontFamily: "Body",
             margin: "2%",
-            marginLeft : "0%",
-                
+            marginLeft: "0%",
+
         },
 
         namePet: {
@@ -28,7 +39,7 @@ const themes = ({
             fontWeight: "bolt",
             fontFamily: "Body",
             margin: "2%",
-            marginLeft : "0%"
+            marginLeft: "0%"
         },
 
         restPet: {
@@ -37,8 +48,8 @@ const themes = ({
             fontStyle: "italic",
             margin: "2%",
             fontFamily: "Body",
-            marginLeft : "0%"
-
+            marginLeft: "0%",
+            whiteSpace: "pre-line"
         },
 
 
@@ -59,7 +70,7 @@ const breakpoints = createBreakpoints({
     "2xl": "96em",
 })
 
-const theme = extendTheme(themes,{breakpoints});
+const theme = extendTheme(themes, { breakpoints });
 
 
 

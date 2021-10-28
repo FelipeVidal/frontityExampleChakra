@@ -1,6 +1,6 @@
 import { connect } from "frontity"
 import { Container } from "@chakra-ui/layout"
-import {Image,Text,Center,Box} from "@chakra-ui/react"
+import {Image,Text,Center} from "@chakra-ui/react"
 import { useMediaQuery } from "@chakra-ui/react"
 
 
@@ -8,7 +8,7 @@ const Page = ({ state, ...props}) => {
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
     const [isSmallerThan992] = useMediaQuery("(min-width: 992px)")
-  
+    console.log(state);
     return (
         <>
             

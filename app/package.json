@@ -27,6 +27,8 @@
     "@frontity/wp-source": "^1.11.6",
     "framer-motion": "^4.1.17",
     "frontity": "^1.17.1",
-    "my-theme": "file:packages/my-theme"
+    "my-theme": "file:packages/my-theme",
+    "node-sass": "^6.0.1",
+    "swiper": "^6.8.4"
   }
 }

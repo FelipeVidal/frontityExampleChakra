@@ -9,6 +9,9 @@ export default {
     theme: {}
   },
   actions: {
-    theme: {}
+    theme: {
+      beforeSSR: async({actions}) => { await actions.source.fetch("/pets"); }
+
+    }
   }
 };
